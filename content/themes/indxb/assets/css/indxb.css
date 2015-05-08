@@ -1,0 +1,74 @@
+body {
+	background-color: #eaf0f5;
+}
+
+.splash {
+	min-height: 300px;
+	z-index: -1;
+	position: relative;
+	background: url(../images/pattern.png) no-repeat;
+	background-size: cover;
+}
+
+.main-wrapper {
+	margin-top: -60px;
+}
+
+ul.filters{
+    display: block;
+    margin: 10px 0 0 0;
+    padding: 0
+}
+ul.filters li {
+    list-style: none;
+    display: block
+}
+ul.filters li a {
+    display: block;
+    padding: 0 0 10px 0;
+    margin: 0 0 10px 0;
+    border-bottom: solid 1px #e2e7ea
+}
+ul.filters li a span {
+    display: block;
+    -webkit-transition-timing-function: cubic-bezier(.25, .1, .25, 1);
+    -moz-transition-timing-function: cubic-bezier(.25, .1, .25, 1);
+    -o-transition-timing-function: cubic-bezier(.25, .1, .25, 1);
+    transition-timing-function: cubic-bezier(.25, .1, .25, 1);
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    transition-duration: .3s;
+    color: #20252b
+}
+ul.filters li a .name {
+    float: left;
+    text-transform: uppercase
+}
+ul.filters li a .count {
+    float: right;
+    text-align: center;
+    width: 32px;
+    background-color: #e2e7ea;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    color: #20252b
+}
+ul.filters li a:before, ul.filters li a:after {
+    content: '';
+    display: table
+}
+ul.filters li a:after {
+    clear: both
+}
+ul.filters li a:hover {
+    color: #20252b
+}
+ul.filters li a:hover .name {
+    color: #20252b
+}
+ul.filters li a:hover .count {
+    background-color: #20252b;
+    color: #fff
+}
